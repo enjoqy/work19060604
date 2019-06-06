@@ -1,0 +1,23 @@
+#begin {
+    width: 800px;
+    /*height: 500px;*/
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+#unit {
+    margin: 0 auto;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}

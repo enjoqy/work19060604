@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="js/jquery-3.4.0.js"></script>
+    <script src="js/index.js"></script>
+
+    <link type="text/css" rel="styleSheet" href="css/index.css"/>
+
+</head>
+<body>
+
+<iframe src="playcat.html" style="position: absolute; z-index: -1; width: 100%; height: 100%;"></iframe>
+
+
+<div id="root">
+    <div id="begin">
+        <form action="" id="unit">
+            <input type="radio" name="status" id="student">在校生
+            <input type="radio" name="status" id="non_student">非在校生
+            <div id="for_student" style="display: none">
+                <br>
+                <br>
+                <span>学校</span>
+                <!--                this.Option[this.options.selectedIndex].value  获取下拉列表的索引-->
+                <select name="city" id="city" onchange="selectUniversity(this.options[this.selectedIndex].value)">
+                    <!--                    <option value="0">请选择所在省市</option>-->
+                    <!--                    <option value="北京">北京</option>-->
+                    <!--                    <option value="上海">上海</option>-->
+                    <!--                    <option value="广东">广东</option>-->
+                    <!--                    <option value="深圳">深圳</option>-->
+                </select>
+                <select name="school" id="school">
+                    <option value="0">请选择学校</option>
+                </select>
+            </div>
+            <div id="for_non_student" style="display: none">
+                <br>
+                <span>就业单位</span>
+                <input type="text" id="company">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
